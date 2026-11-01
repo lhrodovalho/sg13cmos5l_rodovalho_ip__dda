@@ -1,2 +1,2 @@
-# sg13cmos5l_rodovalho_ip_dda
-Differential Difference Amplifier for IHP 130 nm
+# ihp130_rodovalho_ip__lpopamp
+IHP 130nm general purpose operational amplifier

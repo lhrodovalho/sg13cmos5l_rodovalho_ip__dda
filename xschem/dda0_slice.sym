@@ -1,0 +1,84 @@
+v {xschem version=3.4.4 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @@ipa @@ima @@ipb @@imb @@o @@avdd @@avss @@vsub @@en @@enb @@ib @@bn @@yp @@ym @symname"
+template="name=X1"}
+V {}
+S {}
+E {}
+L 4 20 -400 20 -260 {}
+L 4 20 -260 160 -330 {}
+L 4 20 -400 160 -330 {}
+L 4 0 -310 20 -310 {}
+L 4 0 -370 20 -370 {}
+L 4 160 -330 180 -330 {}
+L 4 0 0 180 0 {}
+L 4 0 -420 180 -420 {}
+L 4 30 -315 30 -305 {}
+L 4 25 -310 35 -310 {}
+L 4 0 -290 20 -290 {}
+L 4 25 -290 35 -290 {}
+L 4 0 -350 20 -350 {}
+L 4 30 -375 30 -365 {}
+L 4 25 -370 35 -370 {}
+L 4 25 -350 35 -350 {}
+L 4 20 -330 40 -330 {}
+L 4 40 -390 40 -325 {}
+L 4 40 -325 40 -270 {}
+L 4 0 -240 180 -240 {}
+L 4 180 -420 180 0 {}
+L 4 -0 -420 0 -0 {}
+L 4 0 -80 180 -80 {}
+B 5 -2.5 -372.5 2.5 -367.5 {name=ipa
+dir=inout
+sim_pinnumber=0}
+B 5 -2.5 -352.5 2.5 -347.5 {name=ima
+dir=inout
+sim_pinnumber=0}
+B 5 -2.5 -312.5 2.5 -307.5 {name=ipb
+dir=inout
+sim_pinnumber=1}
+B 5 -2.5 -292.5 2.5 -287.5 {name=imb
+dir=inout
+sim_pinnumber=1}
+B 5 177.5 -332.5 182.5 -327.5 {name=o
+dir=inout
+sim_pinnumber=2}
+B 5 -2.5 -222.5 2.5 -217.5 {name=avdd
+dir=inout
+sim_pinnumber=3}
+B 5 -2.5 -202.5 2.5 -197.5 {name=avss
+dir=inout
+sim_pinnumber=4}
+B 5 -2.5 -182.5 2.5 -177.5 {name=vsub
+dir=inout
+sim_pinnumber=4}
+B 5 -2.5 -142.5 2.5 -137.5 {name=en
+dir=inout
+sim_pinnumber=5}
+B 5 -2.5 -122.5 2.5 -117.5 {name=enb
+dir=inout
+sim_pinnumber=6}
+B 5 -2.5 -102.5 2.5 -97.5 {name=ib
+dir=inout
+sim_pinnumber=9}
+B 5 -2.5 -62.5 2.5 -57.5 {name=bn
+dir=inout
+sim_pinnumber=10}
+B 5 -2.5 -42.5 2.5 -37.5 {name=yp
+dir=inout
+sim_pinnumber=12}
+B 5 -2.5 -22.5 2.5 -17.5 {name=ym
+dir=inout
+sim_pinnumber=13}
+T {@name} 0 -240 2 1 0.2 0.2 {}
+T {en} 10 -150 0 0 0.2 0.2 {}
+T {enb} 10 -130 0 0 0.2 0.2 {}
+T {ib} 10 -110 0 0 0.2 0.2 {}
+T {bn} 10 -70 0 0 0.2 0.2 {}
+T {yp} 10 -50 0 0 0.2 0.2 {}
+T {ym} 10 -30 0 0 0.2 0.2 {}
+T {avdd} 10 -230 0 0 0.2 0.2 {}
+T {avss} 10 -210 0 0 0.2 0.2 {}
+T {vsub} 10 -190 0 0 0.2 0.2 {}

@@ -1,0 +1,19 @@
+set xlabel 'Frequency (Hz)'
+set ylabel 'PSRR (dB)'
+set logscale x
+set format x "10^{%L}"
+set grid
+set key off
+set term png
+set output 'psrr.png'
+set datafile separator ','
+plot \
+'../data/tb_lpopamp_open_ac_sch_psrr.csv0' with lines lt rgb 'blue',\
+'../data/tb_lpopamp_open_ac_sch_psrr.csv1' with lines lt rgb 'blue',\
+'../data/tb_lpopamp_open_ac_sch_psrr.csv2' with lines lt rgb 'blue',\
+'../data/tb_lpopamp_open_ac_sch_psrr.csv3' with lines lt rgb 'blue',\
+'../data/tb_lpopamp_open_ac_sch_psrr.csv4' with lines lt rgb 'blue',\
+'../data/tb_lpopamp_open_ac_sch_psrr.csv5' with lines lt rgb 'blue',\
+'../data/tb_lpopamp_open_ac_sch_psrr.csv6' with lines lt rgb 'blue',\
+'../data/tb_lpopamp_open_ac_sch_psrr.csv7' with lines lt rgb 'blue',\
+'../data/tb_lpopamp_open_ac_sch_psrr.csv8' with lines lt rgb 'blue',\

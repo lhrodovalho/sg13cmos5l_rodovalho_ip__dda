@@ -1,0 +1,73 @@
+
+Note: Compatibility modes selected: hs a
+
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Circuit: * num: 12 corner: mos_fs vdd: 3.6 temp: -40
+
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 121
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 121
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 121
+av0p1hz             =  1.095485e+02
+gbw                 =  3.180673e+06
+pm180               =  1.516187e+08
+pm                  =  5.854402e+01
+gm                  =  -5.897141e+01
+cmrr0p1hz           =  8.919153e+01
+psrr0p1hz           =  6.369395e+01
+
+Warning: command 'plot' is not available during batch simulation, ignored!
+    You may use Gnuplot instead.
+
+
+Warning: command 'plot' is not available during batch simulation, ignored!
+    You may use Gnuplot instead.
+
+idd = -1.87356e-04
+vos = -8.29153e-04
+binary raw file "./out/sp12.raw"
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+OP information in rawfile.
+
+Total analysis time (seconds) = 813.74
+
+Total elapsed time (seconds) = 815.756 
+
+Total DRAM available = 19163.023 MB.
+DRAM currently available = 6282.090 MB.
+Maximum ngspice program size =  308.852 MB.
+Current ngspice program size =  227.957 MB.
+
+Shared ngspice pages =   12.254 MB.
+Text (code) pages =    6.406 MB.
+Stack = 0 bytes.
+Library pages =  223.879 MB.
+
