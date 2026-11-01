@@ -1,4 +1,4 @@
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/tb_dda0_open_ac.sch
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/tb_dda0_open_ac.sch
 **.subckt tb_dda0_open_ac
 Xdut ip im_ cm cm out avdd avss avss en enb ibias dda0
 v_avss GND avss xavss
@@ -6,9 +6,9 @@ v_avdd avdd avss dc {xavdd} ac {xavdd_ac}
 v_en en avss {xen*xavdd}
 v_enb enb avss {(1-xen)*xavdd}
 i_ibias avdd ibias {xen*xibias}
-c_l out cm {xcl} m=1
-c_i im_ im {xci} m=1
-l_f out im_ {xlf} m=1
+c_l out cm {xcl}
+c_i im_ im {xci}
+l_f out im_ {xlf}
 v_cm cm avss {xcm}
 v_im im avss dc {xavdd/2}
 v_ip ip avss dc {xavdd/2}
@@ -98,8 +98,8 @@ v_ip ip avss dc {xavdd/2}
 **.ends
 
 * expanding   symbol:  dda0.sym # of pins=11
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/dda0.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/dda0.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/dda0.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/dda0.sch
 .subckt dda0 ipa ima ipb imb o avdd avss vsub en enb ib
 *.iopin avdd
 *.iopin avss
@@ -114,14 +114,14 @@ v_ip ip avss dc {xavdd/2}
 *.iopin imb
 Xslice[1] ipa ima ipb imb o avdd avss vsub en enb ib bn yp ym dda0_slice
 Xslice[0] ipa ima ipb imb o avdd avss vsub en enb ib bn yp ym dda0_slice
-C_yp_avdd avdd yp 4p m=1
-C_ym_o o ym 4p m=1
+C_yp_avdd avdd yp 4p
+C_ym_o o ym 4p
 .ends
 
 
 * expanding   symbol:  dda0_slice.sym # of pins=14
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/dda0_slice.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/dda0_slice.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/dda0_slice.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/dda0_slice.sch
 .subckt dda0_slice ipa ima ipb imb o avdd avss vsub en enb ib bn yp ym
 *.iopin avdd
 *.iopin avss
@@ -187,8 +187,8 @@ x11[0] o z avss avss n4_1
 
 
 * expanding   symbol:  n1_4.sym # of pins=4
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/n1_4.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/n1_4.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/n1_4.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/n1_4.sch
 .subckt n1_4 D G S B
 *.iopin D
 *.iopin G
@@ -200,8 +200,8 @@ xs X G S B n1_2
 
 
 * expanding   symbol:  p1_4.sym # of pins=4
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/p1_4.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/p1_4.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/p1_4.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/p1_4.sch
 .subckt p1_4 D G S B
 *.iopin D
 *.iopin G
@@ -213,8 +213,8 @@ xd D G X B p1_2
 
 
 * expanding   symbol:  n1_1.sym # of pins=4
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/n1_1.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/n1_1.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/n1_1.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/n1_1.sch
 .subckt n1_1 D G S B
 *.iopin D
 *.iopin G
@@ -223,8 +223,8 @@ xd D G X B p1_2
 **** begin user architecture code
 
 
-X0 x g s b sg13_hv_nmos W=1.0u L=0.5u ng=1 m=1
-X1 d g x b sg13_hv_nmos W=1.0u L=0.5u ng=1 m=1
+X0 x g s b sg13_hv_nmos W=1.0u L=0.5u ng=1
+X1 d g x b sg13_hv_nmos W=1.0u L=0.5u ng=1
 
 
 **** end user architecture code
@@ -232,8 +232,8 @@ X1 d g x b sg13_hv_nmos W=1.0u L=0.5u ng=1 m=1
 
 
 * expanding   symbol:  p4_1.sym # of pins=4
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/p4_1.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/p4_1.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/p4_1.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/p4_1.sch
 .subckt p4_1 D G S B
 *.iopin D
 *.iopin G
@@ -245,8 +245,8 @@ xr D G S B p2_1
 
 
 * expanding   symbol:  n4_1.sym # of pins=4
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/n4_1.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/n4_1.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/n4_1.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/n4_1.sch
 .subckt n4_1 D G S B
 *.iopin D
 *.iopin G
@@ -258,8 +258,8 @@ xl D G S B n2_1
 
 
 * expanding   symbol:  n1_2.sym # of pins=4
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/n1_2.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/n1_2.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/n1_2.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/n1_2.sch
 .subckt n1_2 D G S B
 *.iopin D
 *.iopin G
@@ -271,8 +271,8 @@ xs X G S B n1_1
 
 
 * expanding   symbol:  p1_2.sym # of pins=4
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/p1_2.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/p1_2.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/p1_2.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/p1_2.sch
 .subckt p1_2 D G S B
 *.iopin D
 *.iopin G
@@ -284,8 +284,8 @@ xd D G X B p1_1
 
 
 * expanding   symbol:  p2_1.sym # of pins=4
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/p2_1.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/p2_1.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/p2_1.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/p2_1.sch
 .subckt p2_1 D G S B
 *.iopin D
 *.iopin G
@@ -297,8 +297,8 @@ xr D G S B p1_1
 
 
 * expanding   symbol:  n2_1.sym # of pins=4
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/n2_1.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/n2_1.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/n2_1.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/n2_1.sch
 .subckt n2_1 D G S B
 *.iopin D
 *.iopin G
@@ -310,8 +310,8 @@ xl D G S B n1_1
 
 
 * expanding   symbol:  p1_1.sym # of pins=4
-** sym_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/p1_1.sym
-** sch_path: /home/rodovalho/git/sg13cmos5l_rodovalho_ip__dda/xschem/p1_1.sch
+** sym_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/p1_1.sym
+** sch_path: /foss/designs/sg13cmos5l_rodovalho_ip__dda/xschem/p1_1.sch
 .subckt p1_1 D G S B
 *.iopin D
 *.iopin G
@@ -320,8 +320,8 @@ xl D G S B n1_1
 **** begin user architecture code
 
 
-X0 d g s b sg13_hv_pmos W=1.0u L=0.5u ng=1 m=1
-X1 d g s b sg13_hv_pmos W=1.0u L=0.5u ng=1 m=1
+X0 d g s b sg13_hv_pmos W=1.0u L=0.5u ng=1
+X1 d g s b sg13_hv_pmos W=1.0u L=0.5u ng=1
 
 
 **** end user architecture code

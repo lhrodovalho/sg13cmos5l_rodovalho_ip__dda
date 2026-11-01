@@ -1,0 +1,28 @@
+set xlabel 'Frequency (Hz)'
+set ylabel 'Phase (°)'
+set logscale x
+set format x "10^{%L}"
+set grid
+set key off
+set term png
+set output 'ph.png'
+set datafile separator ','
+plot \
+'../data/tb_dda0_open_ac_sch_ph.csv0' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv1' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv2' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv3' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv4' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv5' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv6' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv7' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv8' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv9' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv10' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv11' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv12' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv13' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv14' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv15' with lines lt rgb 'blue',\
+'../data/tb_dda0_open_ac_sch_ph.csv16' with lines lt rgb 'blue',\
+'../data/tb_lpopamp_open_ac_sch_ph.csv0' with lines lt rgb 'blue',\

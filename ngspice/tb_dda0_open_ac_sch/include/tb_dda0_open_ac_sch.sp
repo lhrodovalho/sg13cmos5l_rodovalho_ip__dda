@@ -52,8 +52,7 @@ v_ip ip avss dc {xavdd/2}
 .option rshunt = 1e12
 .control
 
-  pre_osdi $PDK_ROOT/$PDK/libs.tech/ngspice/osdi/psp103_nqs.osdi
-  *pre_osdi ../../osdi/psp103_nqs.osdi
+  pre_osdi $PDK_ROOT/$PDK/libs.tech/ngspice/osdi/psp103.osdi
 
   * differential input
   alter v_ip   ac=0
@@ -97,13 +96,13 @@ v_ip ip avss dc {xavdd/2}
   plot ph
   print idd vos
 
-  echo "num,corner,vdd,temp,gbw,pm,av0p1hz,cmrr0p1hz,psrr0p1hz,idd,vos" > ./meas/tb_lpopamp_open_ac_sch.meas#num
-  echo "#num,#corner,#vdd,#temp,$&gbw,$&pm,$&av0p1hz,$&cmrr0p1hz,$&psrr0p1hz,$&idd,$&vos" >> ./meas/tb_lpopamp_open_ac_sch.meas#num
+  echo "num,corner,vdd,temp,gbw,pm,av0p1hz,cmrr0p1hz,psrr0p1hz,idd,vos" > ./meas/tb_dda0_open_ac_sch.meas#num
+  echo "#num,#corner,#vdd,#temp,$&gbw,$&pm,$&av0p1hz,$&cmrr0p1hz,$&psrr0p1hz,$&idd,$&vos" >> ./meas/tb_dda0_open_ac_sch.meas#num
 
-  wrdata ./data/tb_lpopamp_open_ac_sch_av.dat#num av
-  wrdata ./data/tb_lpopamp_open_ac_sch_ph.dat#num ph
-  wrdata ./data/tb_lpopamp_open_ac_sch_cmrr.dat#num cmrr
-  wrdata ./data/tb_lpopamp_open_ac_sch_psrr.dat#num psrr
+  wrdata ./data/tb_dda0_open_ac_sch_av.dat#num av
+  wrdata ./data/tb_dda0_open_ac_sch_ph.dat#num ph
+  wrdata ./data/tb_dda0_open_ac_sch_cmrr.dat#num cmrr
+  wrdata ./data/tb_dda0_open_ac_sch_psrr.dat#num psrr
 
 .endc
 

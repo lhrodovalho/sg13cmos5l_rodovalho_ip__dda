@@ -1,0 +1,73 @@
+
+Note: Compatibility modes selected: hs a
+
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Circuit: * num: 7 corner: mos_sf vdd: 3.0 temp: 85
+
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 121
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 121
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 121
+av0p1hz             =  7.86341e+01
+gbw                 =  1.77242e+06
+pm180               =  3.77872e+08
+pm                  =  5.55195e+01
+gm                  =  -7.90489e+01
+cmrr0p1hz           =  9.61109e+01
+psrr0p1hz           =  9.48487e+01
+
+Warning: command 'plot' is not available during batch simulation, ignored!
+    You may use Gnuplot instead.
+
+
+Warning: command 'plot' is not available during batch simulation, ignored!
+    You may use Gnuplot instead.
+
+idd = -2.85894e-04
+vos = -7.34955e-05
+binary raw file "./out/sp7.raw"
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+OP information in rawfile.
+
+Total analysis time (seconds) = 2.17195
+
+Total elapsed time (seconds) = 2.808 
+
+Total DRAM available = 19163.023 MB.
+DRAM currently available = 5803.867 MB.
+Maximum ngspice program size =  146.430 MB.
+Current ngspice program size =   61.973 MB.
+
+Shared ngspice pages =   11.770 MB.
+Text (code) pages =    5.895 MB.
+Stack = 0 bytes.
+Library pages =   58.035 MB.
+
