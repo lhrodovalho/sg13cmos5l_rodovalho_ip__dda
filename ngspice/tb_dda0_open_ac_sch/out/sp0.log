@@ -1,0 +1,21 @@
+
+Note: Compatibility modes selected: hs a
+
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Circuit: * num: 0 corner: mos_tt vdd: 3.3 temp: 25
+
+Warning: Model issue on line 239 :
+  .model xdut.xslice[1].x10d[1].xd.xd.x0:sg13g2_hv_nmos_psp psp103va type= ...
+Unknown model type psp103va - ignored
+
+Warning: Model issue on line 260 :
+  .model xdut.xslice[1].x10d[1].xd.xd.x0:sg13g2_hv_pmos_psp psp103va type= ...
+Unknown model type psp103va - ignored
+
+Error on line 267 or its substitute:
+  n.xdut.xslice[1].x10d[1].xd.xd.x0.nsg13_hv_nmos xdut.xslice[1].x10d[1].xd.xd.x xdut.bn xdut.xslice[1].x10d[1].xd.x avss xdut.xslice[1].x10d[1].xd.xd.x0:sg13g2_hv_nmos_psp w=    1.000000000000000e-06     l=    5.000000000000000e-07     nf=    1.000000000000000e+00     mult=    1.000000000000000e+00     as=    3.400000000000000e-13     ad=    3.400000000000000e-13     ps=    2.680000000000000e-06     pd=    2.680000000000000e-06     dta=    0.000000000000000e+00     ngcon=2 delvto=0 factuo=1
+Unable to find definition of model xdut.xslice[1].x10d[1].xd.xd.x0:sg13g2_hv_nmos_psp
+    Simulation interrupted due to error!
+
